@@ -1,0 +1,30 @@
+{
+  "name": "metrics-collector",
+  "version": "0.1.0",
+  "description": "Automated ecological and social metrics collection for Rook Dashboard",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/agents/researcher.ts",
+    "collect": "ts-node src/agents/researcher.ts",
+    "init": "ts-node -e \"require('./src/db/schema').initSchema()\""
+  },
+  "keywords": [
+    "metrics",
+    "ecology",
+    "carbon-footprint",
+    "llm",
+    "ai-impact"
+  ],
+  "author": "Rook",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
