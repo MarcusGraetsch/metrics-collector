@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# Database
+data/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+*.swp
+
+# Environment
+.env
+.env.local
